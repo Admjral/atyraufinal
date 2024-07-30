@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+a{
+    font-style: normal;
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #74BC28;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.navigation{
+    width: 1920px;
+    height: 66px; 
+    padding-left: 70px; 
+    padding-right: 70px; 
+    padding-top: 11px; 
+    padding-bottom: 11px; 
+    background-color: white !important; 
+    overflow: hidden; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 390px; 
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #000; /* Добавляет границу */
+}
+.logo{
+    width: 240px; 
+    height: 40px; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 15px; display: flex;
+    z-index: 1;
+}
+.logo-name{
+    width: 187px; 
+    color: black; 
+    font-size: 13px; 
+    font-family: "Roboto", sans-serif; 
+    font-weight: 800; 
+    line-height: 20px; 
+    z-index: 1;
+    word-wrap: break-word
+}
+.nav-links{
+    position: relative;
+    width: 203px;z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links-item{
+    font-size: 16px; font-family: "Roboto", sans-serif; 
+    font-weight: 500; line-height: 24px; z-index: 1;
+    word-wrap: break-word
+}
+.butn-reg{
+    width: 75px; 
+    height: 24px; z-index: 1;
+    padding-left: 21px; 
+    padding-right: 21px; 
+    padding-top: 12px; 
+    padding-bottom: 12px;
+    background: #74BC28; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); 
+    border-radius: 7px; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex
+}
+.butn-link{
+    color: white; 
+    font-size: 16px; 
+    font-family: "Roboto", sans-serif;  
+    font-weight: 500; z-index: 1;
+    line-height: 21px; 
+    word-wrap: break-word
+}
+.butn-link:hover{
+    color: #000;
+}
+.butn-log{
+    width: 129px; 
+    height: 24px; 
+    padding-left: 21px; z-index: 1;
+    padding-right: 21px; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+    background: #74BC28; 
+    box-shadow: 0px 0.8536357879638672px 1.7072715759277344px rgba(0, 0, 0, 0.05); 
+    border-radius: 7px; 
+    justify-content: center; 
+    align-items: center;  
+    display: inline-flex
+}
+.lang{
+    font-size:16px;z-index: 1;
+    font-family:"Roboto", sans-serif ;
+}
+.language{
+    padding-right:15px;z-index: 1;
+}
+.btns{
+    width: 500px;z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 96px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #74BC28;
+}
+.projects{
+    margin-top:66px;
+}
+.search{
+    display:flex;
+    align-content: center;
+    width: 700px;
+    justify-content: space-between;
+    margin-left: 126px;
+}
+.photos{
+    display:flex;
+    width: 395px;
+    gap:7px;
+    flex-wrap: wrap;
+}
+.projects-box{
+    margin-top: 30px;
+    width: 1640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project{
+    display: flex;
+    color: #fff;
+    width: 1640px;
+    height:353px;
+    background-color: #74BC28;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 19px;
+    margin-top: 32px;
+}
+.text-box{
+    display: flex;
+    width: 712px;
+    justify-content: space-between;
+}
+.text{
+    margin-left: 84px;
+    margin-top: 11px;
+}
+.text-item{
+    margin-top: 20px;
+}
+.pag{
+    margin-left: 130px;
+    margin-top:51px;
+}
+.pagination .page-link {
+    color: initial; /* Исходный цвет ссылки */
+}
+
+.pagination .page-link:hover {
+    color: #74BC28; /* Задает зеленый цвет при наведении */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #74BC28; /* Зеленый фон для активной страницы */
+    border-color: #74BC28; /* Зеленая рамка для активной страницы */
+    color: white; /* Белый цвет текста для активной страницы */
+}
+
+.pagination .page-item.active .page-link:hover {
+    background-color: darkgreen; /* Более темный зеленый цвет фона при наведении на активную ссылку */
+    border-color: darkgreen; /* Более темная зеленая рамка при наведении на активную ссылку */
+    color: white; /* Белый цвет текста сохраняется */
+}
+.pagination .page-link:focus,
+.pagination .page-link:active {
+    outline: none;
+    box-shadow: none;
+}
+.contacts-item{
+    display: flex;
+    align-content: center;
+    gap: 15px;
+}
+.footer{
+    margin-top: 100px;
+    display: flex;
+    width: 1200px;
+    justify-content: space-around;
+    height: 300px;
+    margin-left: 4%;
+    margin-right: auto;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.filter-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #fff;
+    max-width: 1640px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 20px); /* Четыре колонки */
+}
+
+.filter-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #363636;
+}
+
+.filter-item select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.filter-item select:focus {
+    border-color: #74BC28;
+    outline: none;
+}
+
+.filter-actions {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+.filter-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #74BC28;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-actions button:hover {
+    background-color: #74BC28;
+}
+
+.filter-actions #resetBtn {
+    background-color: #848484;
+}
+
+.filter-actions #resetBtn:hover {
+    background-color: #5a6268;
+}
+
+
