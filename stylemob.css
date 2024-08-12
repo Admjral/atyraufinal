@@ -26,20 +26,18 @@ a:hover{
   }
 .navigation{
     margin-top:30px;
-    margin-left: 4%;
+    margin-left: auto;
     margin-right: auto;
     width: 1750px; 
     height: 66px; 
-    padding-left: 70px; 
-    padding-right: 70px; 
+    padding-left: 4%; 
+    padding-right: 4%; 
     padding-top: 11px; 
     padding-bottom: 11px; 
-    background-color: white !important; 
+    background-color: white; 
     border-radius: 15px; 
-    overflow: hidden; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     align-items: center; 
-    gap: 390px; 
     display: inline-flex;
     position: relative;
     z-index: 1;
@@ -245,13 +243,6 @@ video {
     padding: 0;
     padding-top:20px;
 }
-.proj-heading{
-    text-align: center;
-    margin-top: 40px;
-    color: #74BC28;
-    font-size: 100px;
-}
-
 .rad-con{
     display: flex;
     justify-content:space-between;
@@ -505,6 +496,7 @@ button[type="submit"]:hover {
     display: flex;
     gap: 20px;
 }
+
 @media (max-width:768px) {
     body{
         width: 100%;
@@ -765,5 +757,3 @@ button[type="submit"]:hover {
         margin-right: auto;
     }
 }
-
-
