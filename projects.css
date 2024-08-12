@@ -142,11 +142,8 @@ a:hover{
     justify-content: space-between;
     margin-left: 126px;
 }
-.photos{
-    display:flex;
-    width: 395px;
-    gap:7px;
-    flex-wrap: wrap;
+.arrow{
+    margin-left:1080px; margin-top: -10px
 }
 .projects-box{
     margin-top: 30px;

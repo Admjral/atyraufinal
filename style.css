@@ -123,7 +123,46 @@ a:hover{
     width: 500px;z-index: 1;
     display: flex;
     justify-content: space-between;
-    position: relative;
+}
+
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* По умолчанию окно скрыто */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #888;
+    width: 300px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 220px;
+    margin-top:-10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #28a745;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*Видео*/
@@ -201,20 +240,18 @@ video {
     z-index: 1;
     background-color: #74BC28;
     width: 1900px;
-    height: 560px;
+    height: 460px;
     margin: 0;
     padding: 0;
     padding-top:20px;
 }
-.my-text{
-    width: 383px;
-    height:140px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left:80px;
+.proj-heading{
+    text-align: center;
+    margin-top: 40px;
+    color: #74BC28;
+    font-size: 100px;
 }
-.my-text-flex{
-    display: flex;
-}
+
 .rad-con{
     display: flex;
     justify-content:space-between;
@@ -260,83 +297,82 @@ video {
 }
 .main{
     width: 1900px; 
-    height: 4500px; 
+    height: auto; 
     position: relative; 
     background: rgb(255, 255, 255); 
     margin:0; padding: 0;
 }
 .prj{
-    margin-top: 82px;
+    margin-top: 42px;
     display: flex;
     flex-wrap: wrap;
-    gap: 19px;
+    gap: 10px;
     width:1504px;
     margin-left: auto;
     margin-right: auto;
 }
 .prj-item{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 17.png);
 }
 .prj-item2{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 18.png);
 }
 .prj-item3{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 19.png);
 }
 .prj-item4{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 20.png);
 }
 .prj-item5{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 21.png);
 }
 .prj-item6{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 22.png);
 }.prj-item7{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 23.png);
 }
 .prj-item8{
-    width: 361px;
-    height: 361px;
+    width: 206px;
+    height: 206px;
     border-radius: 12px;
     background-image: url(images/image\ 24.png);
 }
 .text-prj{
     position: relative;
-    width: 302px; 
+    width: 190px; 
     padding-top: 16px;
-    margin-left: 33px;
+    margin-left: 15px;
     color: white;
     text-shadow: 
     -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    font-size: 24px; 
+    font-size: 15px; 
     font-family: Roboto; 
     font-weight: 600; 
     text-transform: uppercase; 
-    line-height: 36px; 
     word-wrap: break-word;
 }
 
@@ -468,5 +504,82 @@ button[type="submit"]:hover {
 .social-media{
     display: flex;
     gap: 20px;
+}
+@media only screen and (max-width: 1024px) {
+    .navigation {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+    .btns {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .video-background, video {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prj {
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .prj-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+
+    .faq {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .social-media {
+        justify-content: center;
+        gap: 10px;
+    }
 }
 
