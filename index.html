@@ -16,17 +16,6 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Бюджет развития Атырауской области</title>
-    <script>
-        function isMobileDevice() {
-            return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-        }
-
-        window.onload = function() {
-            if (isMobileDevice()) {
-                window.location.href = 'mobile.html';
-            }
-        };
-    </script>
 </head>
 
 <body>
@@ -34,7 +23,7 @@
     <div class="main">
         <div class="navigation">
             <div class="logo">
-                <div class="logo-img" style="width: 38px; height: 39px; background: #74BC28"></div>
+                <div class="logo-img"></div>
                 <div class="logo-name">
                     Бюджет развития Атырауской области
                 </div>
@@ -78,8 +67,11 @@
 
         <div class="heading">
             <h1>АТЫРАУ ОБЛЫСЫНЫҢ ДАМУ БЮДЖЕТІ</h1>
-            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" class="shar">
-                <circle cx="9" cy="9" r="9" fill="#74BC28" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="shar">
+                <circle cx="9" cy="9" r="9" fill="#74BC28"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="sharmob">
+                <circle cx="5" cy="5" r="5" fill="#74BC28"/>
             </svg>
             <h1>БЮДЖЕТ РАЗВИТИЯ АТЫРАУСКОЙ ОБЛАСТИ</h1>
         </div>
@@ -217,14 +209,14 @@
             <img class="bigimg1"  src="images/DeWatermark.ai_1719775147670 1.png">
         </div>
         <div class="proj-heading">
-            <h1>ПРОЕКТЫ ПО РАЙОНАМ</h1>
+            <h1 class="pr">ПРОЕКТЫ ПО РАЙОНАМ</h1>
         </div>
         <div class="prj">
             <div class="prj-item5">
                 <div class="text-prj">Город Атырау</div>
                 <a href="Projects Atyrau.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             
@@ -232,49 +224,48 @@
                 <div class="text-prj">Жылыойский район</div>
                 <a href="Projects Zhylyoi.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             <div class="prj-item2">
                 <div class="text-prj">Индерский район</div>
                 <a href="Projects Inter.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             <div class="prj-item3">
                 <div class="text-prj">Исатайский район</div>
                 <a href="Projects Isatay.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             <div class="prj-item4">
                 <div class="text-prj">Курмангазинский район</div>
                 <a href="Projects Kurmangazy.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             <div class="prj-item5">
                 <div class="text-prj">Макатский район </div>
                 <a href="Projects Makat.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             <div class="prj-item6">
                 <div class="text-prj">Махамбетский район</div>
                 <a href="Projects Makhambet.html">
                     <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    class="img-prj">
                 </a>
             </div>
             <div class="prj-item7">
                 <div class="text-prj">Кызылкогинский район</div>
                 <a href="Projects Kyzylkogin.html">
-                    <img src="images/arrow-up-right-circle-fill.svg"
-                        style="margin-top: 200px; margin-left: 290px;width: 60px; height: 60px">
+                    <img src="images/arrow-up-right-circle-fill.svg" class="img-prj">
                 </a>
             </div>
 
