@@ -254,8 +254,9 @@ video {
     padding-top:20px;
 }
 .proj-heading{
+    position: absolute;
     text-align: center;
-    margin-top: 40px;
+    top: 600px;
     color: #74BC28;
     font-size: 100px;
 }
@@ -324,37 +325,34 @@ video {
     background: rgb(255, 255, 255); 
     margin:0; padding: 0;
 }
-.img-prj{
-    position: relative;
-    margin-top: 200px;
-    margin-left: 290px;
-    width: 60px;
-    height: 60px
-}
-.prj{
-    margin-top: 42px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width:1504px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.img-prj-bg{
-    position: relative;
-    z-index: 0;
-    width: 100%;
 
+.carousel {
+    width: 1504px; /* Ширина контейнера карусели */
+    overflow: hidden; /* Скрыть элементы за границами карусели */
+    margin: 0 auto;
+    margin-top: 600px;
 }
-.prj-item{
-position: relative;
-width: 366px;
-height: 366px;
-border-radius: 15px;
+
+.prj {
+    display: flex;
+    animation: scroll-left 15s linear infinite; /* Анимация для движения карусели влево */
 }
-.text-prj{
+
+.prj-item {
+    flex: 0 0 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin-right: 10px; /* Расстояние между элементами */
+}
+
+.img-prj-bg {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.text-prj {
     position: absolute;
-    width: 190px; 
+    width: 190px;
     top: 20px;
     margin-left: 15px;
     color: white;
@@ -369,6 +367,31 @@ border-radius: 15px;
     z-index: 2;
     text-transform: uppercase; 
     word-wrap: break-word;
+}
+
+/* Анимация для прокрутки влево */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Смещение на ширину всех элементов */
+    }
+}
+
+/* Изменение направления анимации при наведении */
+.carousel:hover .prj {
+    animation: scroll-right 15s linear infinite;
+}
+
+/* Анимация для прокрутки вправо */
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .accordion{
@@ -750,69 +773,90 @@ button[type="submit"]:hover {
         background: rgb(255, 255, 255); 
         margin:0; padding: 0;
     }
-    .prj{
-        margin-top: 42px;
+    .carousel {
+        width: 576px; /* Ширина контейнера карусели */
+        overflow: hidden; /* Скрыть элементы за границами карусели */
+        margin: 0 auto;
+        z-index: 2;
+        margin-top: 899px;
+        position: relative;
+        }
+    
+    .prj {
         display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        width:505px;
+        animation: scroll-left 15s linear infinite; /* Анимация для движения карусели влево */
+    }
+    
+    .prj-item {
+        flex: 0 0 200px;
+        height: 200px;
+        border-radius: 15px;
+        margin-right: 10px; /* Расстояние между элементами */
+    }
+    
+    .img-prj-bg {
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .prj-all{
+        color: #74BC28;
+        font-size: 19px;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        width: 576px;
+        top: 300px;
+        position: absolute;
         margin-left: auto;
         margin-right: auto;
+        overflow: hidden;
     }
-    .img-prj{
-        position: relative;
-        margin-top: 150px;
-        margin-left: 210px;
-        width: 30px;
-        height: 30px
+
+    .text-prj {
+        position: absolute;
+        width: 190px;
+        top: 20px;
+        margin-left: 15px;
+        color: white;
+        text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+        font-size: 18px; 
+        font-family: Roboto; 
+        font-weight: 600; 
+        z-index: 2;
+        text-transform: uppercase; 
+        word-wrap: break-word;
     }
-    .prj-item{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 17.png);
+    
+    /* Анимация для прокрутки влево */
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%); /* Смещение на ширину всех элементов */
+        }
     }
-    .prj-item2{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 18.png);
+    
+    /* Изменение направления анимации при наведении */
+    .carousel:hover .prj {
+        animation: scroll-right 15s linear infinite;
     }
-    .prj-item3{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 19.png);
+    
+    /* Анимация для прокрутки вправо */
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
-    .prj-item4{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 20.png);
-    }
-    .prj-item5{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 21.png);
-    }
-    .prj-item6{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 22.png);
-    }.prj-item7{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 23.png);
-    }
-    .prj-item8{
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
-        background-image: url(images/image\ 24.png);
-    }
+
     .question{
         width: 500px;
         margin-top:100px;
