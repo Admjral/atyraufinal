@@ -259,6 +259,20 @@ video {
     color: #74BC28;
     font-size: 100px;
 }
+.prj-all{
+    color: #74BC28;
+    font-size: 19px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 1812px;
+    top: 750px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .rad-con{
     display: flex;
@@ -326,57 +340,22 @@ video {
     margin-left: auto;
     margin-right: auto;
 }
+.img-prj-bg{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+
+}
 .prj-item{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 17.png);
-}
-.prj-item2{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 18.png);
-}
-.prj-item3{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 19.png);
-}
-.prj-item4{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 20.png);
-}
-.prj-item5{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 21.png);
-}
-.prj-item6{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 22.png);
-}.prj-item7{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 23.png);
-}
-.prj-item8{
-    width: 366px;
-    height: 366px;
-    border-radius: 12px;
-    background-image: url(images/image\ 24.png);
+position: relative;
+width: 366px;
+height: 366px;
+border-radius: 15px;
 }
 .text-prj{
-    position: relative;
+    position: absolute;
     width: 190px; 
-    padding-top: 16px;
+    top: 20px;
     margin-left: 15px;
     color: white;
     text-shadow: 
@@ -387,6 +366,7 @@ video {
     font-size: 18px; 
     font-family: Roboto; 
     font-weight: 600; 
+    z-index: 2;
     text-transform: uppercase; 
     word-wrap: break-word;
 }
